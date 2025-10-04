@@ -30,7 +30,7 @@ AI Text-to-Image Generator is a **full-stack SaaS application** that allows user
 - **Authentication:** JWT
 - **AI API:** ClipDrop
 - **Payment:** Razorpay
-- **Others:** JavaScript, Axios, Redux
+- **Others:** JavaScript, Axios
 
 ---
 
