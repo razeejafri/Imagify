@@ -40,7 +40,7 @@ function BuyCredit() {
   }
 
   const paymentRazorpay = async (planId) => {
-    console.log("Purchase clicked", planId);
+  
     try {
       if (!user) {
         setshowLogin(true)
@@ -56,7 +56,6 @@ function BuyCredit() {
       const { data } = await axios.post(backendUrl + '/api/payment/create-order', {
         planId: plan.id
       }, { headers: { token } })
-      console.log(data);
 
       if (data.success) {
         initPay(data)

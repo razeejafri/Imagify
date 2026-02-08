@@ -10,9 +10,21 @@ const PORT = process.env.PORT || 4000;
 const app = express()
 
 app.use(express.json()) //middleware
-app.use(cors())
+
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://your-frontend-url.vercel.app"
+  ],
+  credentials: true
+}));
+
 await connectDB()
 
+/* ====== HEALTH CHECK (YAHAN) ====== */
+app.get("/", (req, res) => {
+  res.send("API is running 🚀");
+});
 
 app.use('/api/user', userRouter)
 app.use('/api/image', imageRouter)

@@ -36,8 +36,6 @@ export default function Login() {
 
       const { data } = await axios.post(backendUrl+'/api/user/register', { name, email, password });
 
-      console.log("Register Response:", data);
-
       if (data.success) {
         settoken(data.token);
         setuser(data.user);
