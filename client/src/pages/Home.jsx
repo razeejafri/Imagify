@@ -8,11 +8,11 @@ import Generatebtn from '../components/Generatebtn'
 function Home() {
   return (
     <div>
-       <Header/> 
-       <Steps/>
-       <Description/>
-       <Testimonial/>
-       <Generatebtn/>
+      <Header />
+      <Steps />
+      <Description />
+      <Testimonial />
+      <Generatebtn />
     </div>
   )
 }
