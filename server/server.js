@@ -14,7 +14,7 @@ app.use(express.json()) //middleware
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://your-frontend-url.vercel.app"
+    "https://imagify-xlgw.vercel.app/"
   ],
   credentials: true
 }));
