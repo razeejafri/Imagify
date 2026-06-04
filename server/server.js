@@ -27,6 +27,6 @@ app.get("/", (req, res) => {
 app.use('/api/user', userRouter)
 app.use('/api/image', imageRouter)
 app.use('/api/payment', paymentRouter)
-app.get('/', (req, res) => res.send("API is working"))
+app.get('/', (req, res) => res.send("API working"))
 
 app.listen(PORT, () => console.log("Server is running on port " + PORT))
